@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math/big"
+	"math"
 )
 
 func main() {
@@ -22,4 +23,8 @@ func main() {
 
 	bigSum.Add(&b1, &b2).Add(&bigSum, &b3)
 	fmt.Printf("BigSum = %.10g\n", &bigSum)
+
+	circuleRadius := 15.5
+	circumference := circuleRadius * math.Pi
+	fmt.Printf("Circumference: %.2f\n", circumference)
 }
