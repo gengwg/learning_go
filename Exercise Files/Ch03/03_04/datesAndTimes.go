@@ -19,4 +19,10 @@ func main() {
 	tomorrow := t.AddDate(0, 0, 1) // year, month, day
 	fmt.Printf("Tomorrow is %v, %v %v, %v\n",
 	tomorrow.Weekday(), tomorrow.Month(), tomorrow.Day(), tomorrow.Year())
+
+	longFormat := "Monday, Januray 2, 2006"
+	fmt.Println("Tomorrow is", tomorrow.Format(longFormat))
+
+	shortFormat := "1/2/06"
+	fmt.Println("Tomorrow is", tomorrow.Format(shortFormat))
 }
