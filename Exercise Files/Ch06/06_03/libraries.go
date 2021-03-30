@@ -21,5 +21,5 @@ func FullName(f, l string) (string, int) {
 func FullNameNakedReturn(f, l string) (full string, length int) {
 	full = f + " " + l
 	length = len(full)
-	return 
+	return
 }
