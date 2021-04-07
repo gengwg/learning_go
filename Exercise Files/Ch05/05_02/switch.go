@@ -8,13 +8,13 @@ import (
 
 func main() {
 
-	// rand.Seed(time.Now().Unix())
+	rand.Seed(time.Now().Unix())
 	// dow := rand.Intn(6) + 1
-	fmt.Println("Day", dow)
+	// fmt.Println("Day", dow)
 
 	result := ""
 
-	switch dow {
+	switch dow := rand.Intn(6) + 1; dow {
 	case 1:
 		result = "It's Sunday!"
 	case 7:
