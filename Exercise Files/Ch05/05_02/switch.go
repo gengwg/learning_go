@@ -8,8 +8,8 @@ import (
 
 func main() {
 
-	rand.Seed(time.Now().Unix())
-	dow := rand.Intn(6) + 1
+	// rand.Seed(time.Now().Unix())
+	// dow := rand.Intn(6) + 1
 	fmt.Println("Day", dow)
 
 	result := ""
@@ -23,6 +23,6 @@ func main() {
 		result = "It's a weekday!"
 	}
 
-	fmt.Println("Day", dow, ",", result)
+	fmt.Println(result)
 
 }
