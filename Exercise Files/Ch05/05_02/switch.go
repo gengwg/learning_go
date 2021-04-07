@@ -25,4 +25,19 @@ func main() {
 
 	fmt.Println(result)
 
+	x := -42;
+	switch {
+	case x < 0:
+		result = "less than zero"
+		// default is not fall through!
+		// fallthrough
+	case x == 0:
+		result = "equal to zero"
+	default:
+		result = "greater than zero"
+	}
+
+
+	fmt.Println(result)
+
 }
