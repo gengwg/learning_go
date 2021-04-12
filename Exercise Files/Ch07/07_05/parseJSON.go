@@ -11,7 +11,7 @@ import (
 
 // you need use the same name as json field
 type Tour struct {
-	Name, Price string	// Upper case exports the fields
+	Name, Price string	// Upper case exports the fieldsq
 }
 
 func main() {
